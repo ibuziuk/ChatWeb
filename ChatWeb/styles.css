@@ -2,6 +2,9 @@ body{
     background-color: #494949;
     color: #cd8317;
 }
+div{
+    background-color: #3a3a3a;
+}
 .inLog{
     float: left;
     margin-left: 40%;
@@ -13,6 +16,7 @@ body{
     float: left;
     width: 20%;
     text-align: center;
+    height: 100%;
 }
 .centerBlock{
     margin: 0 21% 0 21%;
@@ -22,12 +26,24 @@ body{
     float: right;
     width: 20%;
 }
-.mainHistory{
-    height: 80%;
+.mailHistory{
+    padding: 10px 10px 10px 10px;
+    height: 50%;
+    overflow-y: auto;
+    border-bottom-style: solid;
+}
+.mailInput{
+    padding: 10px 10px 10px 10px;
+}
+.mail{
+    margin-top: 50%;
 }
 header{
     text-align: right;
 }
 textarea{
-    width: 100%;
+    width: 98%;
+}
+img{
+    margin: 10px 10px 10px 10px;
 }
