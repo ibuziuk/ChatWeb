@@ -1,0 +1,33 @@
+body{
+    background-color: #494949;
+    color: #cd8317;
+}
+.inLog{
+    float: left;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: #3a3a3a;
+    padding: 20px 10px 20px 10px;
+}
+.leftBlock{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.centerBlock{
+    margin: 0 21% 0 21%;
+}
+.rightBlock{
+    text-align: center;
+    float: right;
+    width: 20%;
+}
+.mainHistory{
+    height: 80%;
+}
+header{
+    text-align: right;
+}
+textarea{
+    width: 100%;
+}
