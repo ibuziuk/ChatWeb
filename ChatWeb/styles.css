@@ -37,6 +37,9 @@ div{
 }
 .mail{
     margin-top: 50%;
+    border-style: ridge;
+    border-width: 1px;
+    padding: 5px 5px 5px 5px;
 }
 header{
     text-align: right;
