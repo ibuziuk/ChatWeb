@@ -29,7 +29,7 @@ div{
 .mailHistory{
     padding: 10px 10px 10px 10px;
     height: 50%;
-    overflow-y: auto;
+    overflow-y: scroll;
     border-bottom-style: solid;
 }
 .mailInput{
