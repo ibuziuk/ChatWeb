@@ -63,3 +63,15 @@ a{
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
+.del{
+    float: right;
+    visibility: hidden;
+}
+.rec{
+    float: right;
+    visibility: hidden;
+}
+textarea{
+    background-color: #3a3a3a;
+    color: #cd8317;
+}
