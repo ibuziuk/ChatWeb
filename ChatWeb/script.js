@@ -21,3 +21,19 @@ for(var i = 0 ; i < messages.length ; i++) {
         }
     })
 }
+function renameUser(){
+    var text= prompt("Введите имя","");
+    document.getElementById("nameUser").innerHTML = text;
+}
+function renameEmail()
+{
+    var t = document.getElementsByClassName("emailText");
+    t[0].innerHTML =  prompt("Введите сообщение","");
+    /*for(var i = 0 ; i<massCh.length(); i++)
+    {
+        if(massCh[i].ClassName == "emailText")
+        {
+            massCh[i].innerHTML = "ssdfsdfsdf";
+        }
+    }*/
+}

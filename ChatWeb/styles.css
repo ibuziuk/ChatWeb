@@ -33,7 +33,7 @@ div{
     border-bottom-style: solid;
 }
 .mailInput{
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 .mail{
     margin-top: 50%;
@@ -74,4 +74,10 @@ a{
 textarea{
     background-color: #3a3a3a;
     color: #cd8317;
+}
+.emailText{
+    background-color: #3a3a3a;
+    color: #cd8317;
+    border-style: solid;
+    border-width: 1px;
 }
