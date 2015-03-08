@@ -1,6 +1,13 @@
-body{
+.body{
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #494949;
     color: #cd8317;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 3px;
 }
 div{
     background-color: #3a3a3a;
@@ -16,30 +23,34 @@ div{
     float: left;
     width: 20%;
     text-align: center;
-    height: 100%;
+    padding: 5px;
 }
 .centerBlock{
     margin: 0 21% 0 21%;
+    height: 100%;
+    width: 58%;
+    position: fixed;
 }
 .rightBlock{
     text-align: center;
     float: right;
     width: 20%;
+    padding: 5px;
 }
 .mailHistory{
     padding: 10px 10px 10px 10px;
-    height: 50%;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-bottom-style: solid;
+    height: 70%;
 }
 .mailInput{
     padding: 10px;
 }
 .mail{
-    margin-top: 50%;
     border-style: ridge;
     border-width: 1px;
-    padding: 5px 5px 5px 5px;
+    margin: 10px 0px;
+    padding: 5px;
 }
 header{
     text-align: right;
@@ -75,9 +86,10 @@ textarea{
     background-color: #3a3a3a;
     color: #cd8317;
 }
-.emailText{
+.emailText {
     background-color: #3a3a3a;
     color: #cd8317;
     border-style: solid;
     border-width: 1px;
+    padding: 10px;
 }
