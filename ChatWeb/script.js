@@ -47,20 +47,27 @@ function sendEmail() {
     var massString = document.getElementsByName("email")[0].value.split('\n');
     for (var i = 0; i < massString.length; i++)
     {
-        s +=  massString[i] +"<br>" ;
+        s +=  massString[i];
+        if(i!= massString.length-1){
+            s+="<br>";
+        }
     }
     document.getElementsByName("email")[0].value = "";
-    s+='</div></div>';
+    s+='</div>';
 
-    d.innerHTML = '<div class="mail"  >\
-    Alex Zapolski\
-    <img class="rec" onclick="renameEmail()" src = "rec.gif"> </img>\
+    d.innerHTML = document.getElementById("nameUser").textContent+'<img class="rec" onclick="renameEmail()" src = "rec.gif"> </img>\
     <img class="del" src = "del.png"> </img>\
     <br><br>\
     <div class="emailText" >' + s ;
+    d.setAttribute("class","mail");
+    d.style.bottom = "0px";
     var e =document.getElementsByClassName("mailHistory")[0];
     e.appendChild(d);
     var messages = document.getElementsByClassName("mail");
+    for(var i = messages.length-2 ; i>=0 ; i--)
+    {
+        messages[i].style.bottom = parseInt(messages[i+1].style.bottom)+ messages[i+1].offsetHeight +"px";
+    }
     messages[messages.length-1].addEventListener("mouseover",mouseOver);
     messages[messages.length-1].addEventListener("mouseout", mouseOut);
     messages[messages.length-1].addEventListener("click", renameEmail);
