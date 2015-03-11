@@ -55,7 +55,8 @@ function sendEmail() {
     document.getElementsByName("email")[0].value = "";
     s+='</div>';
 
-    d.innerHTML = document.getElementById("nameUser").textContent+'<img class="rec" onclick="renameEmail()" src = "rec.gif"> </img>\
+    d.innerHTML = document.getElementById("nameUser").textContent+'<img class="rec" onclick="renameEmail()" \
+    src = "rec.gif"> </img>\
     <img class="del" src = "del.png"> </img>\
     <br><br>\
     <div class="emailText" >' + s ;
